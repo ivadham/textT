@@ -29,4 +29,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+// Map root URL to Index page
+app.MapGet("/", () => Results.Redirect("/Index"));
+
 app.Run();

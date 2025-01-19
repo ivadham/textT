@@ -26,6 +26,7 @@ namespace textT.Pages
 
             var paste = new Paste
             {
+                UniqueIdentifier = Guid.NewGuid().ToString(),
                 Content = Content,
                 CreatedAt = DateTime.UtcNow
             };

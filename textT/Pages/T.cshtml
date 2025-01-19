@@ -1,0 +1,11 @@
+﻿@page "{uniqueIdentifier}"
+@model textT.Pages.TModel
+@{
+    ViewData["Title"] = @Model.Paste.UniqueIdentifier;
+}
+
+<h2>Text for @Model.Paste.UniqueIdentifier</h2>
+
+<div>
+    <p>@Model.Paste.Content</p>
+</div>
