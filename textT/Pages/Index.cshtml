@@ -1,0 +1,19 @@
+﻿@page
+@model textT.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to text&lt;T&gt;</h1>
+    <p class="lead">Share and store your text snippets with ease!</p>
+</div>
+
+<a class="btn btn-primary mt-4" asp-page="/Create">Create New Text</a>
+
+<ul class="list-group mt-4">
+    @foreach (var paste in Model.Pastes)
+    {
+        <li class="list-group-item">@paste.Content (@paste.CreatedAt)</li>
+    }
+</ul>

@@ -1,0 +1,15 @@
+﻿@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Create Text";
+}
+
+<h2>Create Text</h2>
+
+<form method="post">
+    <div class="form-group">
+        @* <label for="Content">Content</label> *@
+        <textarea class="form-control" placeholder="Write here..." id="Content" name="Content" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
